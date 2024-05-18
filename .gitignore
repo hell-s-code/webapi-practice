@@ -1,0 +1,6 @@
+.vs
+bin
+obj
+api/bin
+api/obj
+db/data
