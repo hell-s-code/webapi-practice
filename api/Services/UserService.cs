@@ -9,9 +9,4 @@ public class UserService
     {
         _dbContext = dbContext;
     }
-
-    public List<User> GetUsers()
-    {
-        return _dbContext.Set<User>().ToList();
-    }
 }

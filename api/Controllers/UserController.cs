@@ -14,10 +14,4 @@ public class UserController : ControllerBase
     {
         _userService = userService;
     }
-
-    [HttpGet]
-    public ActionResult Get()
-    {
-        return Ok(_userService.GetUsers());
-    }
 }

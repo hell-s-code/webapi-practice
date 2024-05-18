@@ -13,10 +13,4 @@ public class RoleController : ControllerBase
     {
         _roleService = roleService;
     }
-
-    [HttpGet]
-    public async Task<ActionResult> Get()
-    {
-        return Ok(await _roleService.GetRoles());
-    }
 }

@@ -9,9 +9,4 @@ public class RoleService
     {
         _dbContext = dbContext;
     }
-
-    public async Task<List<Role>> GetRoles()
-    {
-        return (List<Role>)await _dbContext.QueryAsync<Role>("select * from role");
-    }
 }
